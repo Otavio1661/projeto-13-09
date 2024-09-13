@@ -18,7 +18,7 @@
 
     <title> Logn Gazin </title>
   </head>
-  <body>
+  <body style="background: rgba(71, 158, 255, 1);">
     <header> <!--Inicio Cabealho-->
       <nav class="navbar navbar-expand-md navbar-dark" id="bg-top">
         <div class="container">
@@ -32,22 +32,22 @@
             <span class="navbar-toggler-icon "></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="nav-principal">
+          <div style="padding-bottom: 10px;" class="collapse navbar-collapse" id="nav-principal">
             <ul class="navbar-nav ml-auto" style="font-size: 130%;">
               <li>
-                <a href="" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link active">Home</a>
               </li>
               <li>
-                <a href="" class="nav-link">Cadastrar</a>
+                <a href="cadastro.html" class="nav-link">Cadastrar</a>
               </li>
               <li>
-                <a href="" class="nav-link">Contatato</a>
+                <a href="" class="nav-link">Contato</a>
+              </li>
+              <li class="mr-4">
+                <a href="suporte.html" class="nav-link">Suporte</a>
               </li>
               <li>
-                <a href="" class="nav-link">Suporte</a>
-              </li>
-              <li>
-                <a style="font-size: 95%; width: 150px;" href="" class="btn btn-outline-light ml-4">Entrar</a>
+                <a style="font-size: 95%; width: 150px;" href="pagina-principal.html" class="btn btn-outline-light">Entrar</a>
               </li>
             </ul>
           </div>
@@ -57,7 +57,7 @@
     </header> <!--/Fim Cabealho-->
 
     <section id="home" class=""> <!-- Início seção logn -->
-        <div id="c-menu" class="row align-items-center div-responsive">
+        <div id="c-menu" class="pgs-1 row align-items-center div-responsive">
             <form class="container col-10">
                 <div class="form-group">
                   <label for="exampleInputEmail1" style="font-size: 120%;">Usuário</label>
@@ -72,8 +72,10 @@
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
                   <label class="form-check-label" for="exampleCheck1">Lembre de mim</label>
                 </div>
-              <div class="row" style="justify-content: center; margin: 0;">
-                <button style="width: 200px;" type="submit" class="btn btn-primary" id="logar">Logar</button>
+              <div class="row" style="justify-content: center;"> 
+                  <button style="width: 200px;" type="submit" class="btn" id="logar">
+                    <a href="pagina-principal.html" class="link-logar"><strong>Logar</strong></a>
+                  </button>
               </div>
               </form>
 

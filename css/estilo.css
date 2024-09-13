@@ -1,68 +1,123 @@
-body, html {
+body,
+html {
   margin: 0;
 }
 
+body {background: rgba(71, 158, 255, 1);}
+
+.pgs {
+  animation: pagina 2s;
+}
+
+.pgs-1 {
+  animation: pagina-1 2s;
+}
+
 #bg-top {
-    background: rgb(0, 0, 136);
-    color: wheat
+  background: rgb(0, 0, 136);
+  color: wheat
 }
 
 #c-menu {
-    font-size: 150%;
-    padding: 20px;
-    padding-top: 30px;
-    background: rgb(0, 0, 136);
-    border-radius: 15px;
-    color: wheat;
+  font-size: 150%;
+  padding: 20px;
+  padding-top: 30px;
+  background: rgb(0, 0, 136);
+  border-radius: 15px;
+  color: wheat;
 }
 
 #botão {
-    font-size: 15px;
-    width: 100%;
-    color: wheat;
-    background: rgb(4, 0, 255);
-    padding: 5px;
-    border-radius: 10px;
+  font-size: 15px;
+  width: 100%;
+  color: wheat;
+  background: rgb(4, 0, 255);
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .div-responsive {
-    width: 576px;
-    height: auto;
+  width: 576px;
+  height: auto;
 
-  }
-  
-  @media screen (min-width: 768px) {
-    .div-responsive {
-      width: 50%;
-    }
-  }
-  
-  @media screen (min-width: 1024px) {
-    .div-responsive {
-      width: 30%;
-    }
-  }
+}
 
-  section {
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 94vh; /* altura da viewport */
-    background-color: rgb(141, 148, 255);
-    background: linear-gradient(0deg, rgba(71,158,255,1) 0%, rgba(5,0,110,1) 100%);
+@media screen (min-width: 768px) {
+  .div-responsive {
+    width: 50%;
   }
+}
 
-  .rodape {
-    background-color: rgb(255, 255, 255);
-    padding: 0;
-    margin-left: 10px;
+@media screen (min-width: 1024px) {
+  .div-responsive {
+    width: 30%;
   }
+}
 
-  .rodape:hover {
-    background-color: rgba(128, 128, 128, 0.500);
-  }
+section {
+  display: flex;
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  height: 100vh;
+  /* altura da viewport */
+  background-color: rgb(141, 148, 255);
+  background: linear-gradient(0deg, rgba(71, 158, 255, 1) 0%, rgba(5, 0, 110, 1) 100%);
+}
 
 
-  .rodape a {
-    color: rgba(0, 0, 0, 0.750);
+/* RODAPE */
+.rodape {
+  margin: 0;
+  width: 300px;
+  background-color:rgb(71, 158, 255, 1) ;
+}
+
+.rodape:hover {
+  background-color: rgba(128, 128, 128, 0.500);
+}
+
+
+.rodape a {
+  color: rgba(0, 0, 0, 0.750);
+}
+
+/* link botão logar */
+
+.link-logar {
+  color: rgb(0, 2, 94);
+  font-size: 140%;
+  padding: 14px 70px 14px 60px;
+}
+
+.link-logar:hover {
+  text-decoration: none;
+  color: rgba(0, 2, 94, 0.700);
+}
+
+/* Animação */
+
+@keyframes pagina {
+  from {
+    opacity: 0.5; 
+    translate: 100vw 0;
   }
+
+  to {
+    opacity: 1;
+    transition: 0 0;
+  }
+}
+
+@keyframes pagina-1 {
+  from {
+    opacity: 0.5; 
+    translate: -100vw 0;
+  }
+
+  to {
+    opacity: 1;
+    transition: 0 0;
+  }
+}
