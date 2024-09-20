@@ -3,7 +3,11 @@ html {
   margin: 0;
 }
 
-body {background: rgba(71, 158, 255, 1);}
+body {
+  background-color: rgb(5, 0, 110, 1);
+  background: linear-gradient(0deg, rgba(71, 158, 255, 1) 0%, rgba(5, 0, 110, 1) 100%) no-repeat;
+  
+}
 
 .pgs {
   animation: pagina 2s;
@@ -14,8 +18,15 @@ body {background: rgba(71, 158, 255, 1);}
 }
 
 #bg-top {
-  background: rgb(0, 0, 136);
+  background: rgb(0, 0, 155);
   color: wheat
+}
+
+#menu-pg-1 {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: auto;
 }
 
 #c-menu {
@@ -62,12 +73,11 @@ section {
   /* Centraliza verticalmente */
   height: 100vh;
   /* altura da viewport */
-  background-color: rgb(141, 148, 255);
-  background: linear-gradient(0deg, rgba(71, 158, 255, 1) 0%, rgba(5, 0, 110, 1) 100%);
-}
+  }
 
 
-/* RODAPE */
+/*__________________________________________________________________
+ RODAPE */
 .rodape {
   margin: 0;
   width: 300px;
@@ -83,7 +93,9 @@ section {
   color: rgba(0, 0, 0, 0.750);
 }
 
-/* link botão logar */
+/* 
+___________________________________________________________________
+link botão logar */
 
 .link-logar {
   color: rgb(0, 2, 94);
@@ -96,7 +108,8 @@ section {
   color: rgba(0, 2, 94, 0.700);
 }
 
-/* Animação */
+/*____________________________________________________________________
+ Animação */
 
 @keyframes pagina {
   from {
@@ -121,3 +134,43 @@ section {
     transition: 0 0;
   }
 }
+
+/* Pagina Principal */
+
+.pg-1 {
+  width: 20%px;
+  height: 200px;
+  background: red;
+  margin: 10%;
+}
+
+.quadrado {
+  width: 100%; /* Faz com que os quadrados ocupem a largura disponível */
+  max-width: 200px; /* Limita a largura máxima */
+  aspect-ratio: 1; /* Mantém a proporção 1:1 para quadrados */
+  background-color: rgb(4, 0, 255); /* Cor de fundo */
+  margin: 15px; /* Espaço entre os quadrados */
+  transition: transform 0.3s; /* Transição suave ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra*/
+  border-radius: 10px; /* Aredondamento*/
+  border: 1px solid white; /* Aredondamento*/
+}
+
+.margin-1 {
+  position: absolute;
+  margin-top: 950px; /* Para espaçar todos os quadrados */
+}
+
+.quadrado:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente ao passar o mouse */
+}
+
+
+@media (min-width: 768px) {
+  .margin-1 {
+    margin-top: 100px;
+  }
+}
+
+
+
