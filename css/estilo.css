@@ -19,7 +19,10 @@ body {
 
 #bg-top {
   background: rgb(0, 0, 155);
-  color: wheat
+  width: 100%;
+  color: wheat;
+  position: fixed;
+  z-index: 1;
 }
 
 #menu-pg-1 {
@@ -185,7 +188,7 @@ link botão logar */
 /*__________________________________________________________________
  RODAPE */
 
- .rodape1 {
+ .rodape {
   font-size: 12px;
   width: 20%;
   height: 15px;
@@ -194,11 +197,11 @@ link botão logar */
   margin-bottom: 0.5px;
 }
 
-.rodape1:hover {
+.rodape:hover {
   background-color: rgba(128, 128, 128, 0.500);
 }
 
 
-.rodape1 a {
+.rodape a {
   color: rgba(0, 0, 0, 0.750);
 }
