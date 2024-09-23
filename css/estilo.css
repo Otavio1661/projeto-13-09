@@ -9,6 +9,34 @@ body {
   
 }
 
+/*___________________________________________________________________
+link topo */
+
+.container-l-t a {
+  color: rgba(255, 255, 255, 0.615);
+  margin: 5px 10px ;
+  text-decoration: none;
+
+}
+
+.container-l-t a:hover {
+  color: rgb(255, 255, 255);
+}
+
+#nav-b-c a {
+  color: white;
+  margin: 5px 10px ;
+}
+
+#nav-b-c a:hover {
+  background: rgb(11, 0, 211);
+  color: rgb(255, 255, 255);
+
+}
+
+/*___________________________________________________________________
+ pagina */
+
 .pgs {
   animation: pagina 2s;
 }
