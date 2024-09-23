@@ -153,7 +153,7 @@ link botão logar */
 
 .margin-1 {
   position: absolute;
-  margin-top: 900px; /* Para espaçar todos os quadrados */
+  margin-top: 700px; /* Para espaçar todos os quadrados */
 }
 
 .quadrado:hover {
