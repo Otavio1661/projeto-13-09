@@ -10,10 +10,10 @@ body {
 }
 
 /*___________________________________________________________________
-link topo */
+link topo pg1 */
 
 .container-l-t a {
-  color: rgba(255, 255, 255, 0.615);
+  color: rgba(255, 255, 255, 0.750);
   margin: 5px 10px ;
   text-decoration: none;
 
@@ -194,7 +194,7 @@ link botão logar */
 
 @media (min-width: 768px) {
   .margin-1 {
-    margin-top: 100px;
+    margin-top: 200px;
   }
 }
 
@@ -205,6 +205,7 @@ link botão logar */
   width: 60%;
   margin-top: 10%; 
   margin-bottom: 10px;
+  filter:invert(100%);
  }
 
 .menu-pg-2 {
