@@ -10,16 +10,9 @@ body {
 }
 
 /*___________________________________________________________________
-link topo pg1 */
+link topo */
 
-.container-l-t a {
-  color: rgba(255, 255, 255, 0.750);
-  margin: 5px 10px ;
-  text-decoration: none;
-
-}
-
-.container-l-t a:hover {
+#container-l-t a:hover {
   color: rgb(255, 255, 255);
 }
 
@@ -200,7 +193,7 @@ link botão logar */
     /* Centraliza horizontalmente */
     align-items: center;
     /* Centraliza verticalmente */
-    height: 90vh;
+    height: 91vh;
     /* altura da viewport */
     }
 
