@@ -28,34 +28,36 @@
     <nav class="navbar navbar-expand-md navbar-dark" id="bg-top">
       <div class="container" id="container-l-t">
 
-        
+        <a href="#" class="navbar-brand lt-auto">
           <img src="img/logo-gazin.png" width="180">
-        
+        </a>
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
           <span class="navbar-toggler-icon "></span>
         </button>
 
         <div style="padding-bottom: 10px;" class="collapse navbar-collapse" id="nav-principal">
-          <ul class="navbar-nav ml-auto container-l-t" style="font-size: 130%;">
+          <ul class="navbar-nav ml-auto" style="font-size: 130%;">
             <li>
-              <a href="index.html" class="nav-link">Home</a>
+              <a href="index.php" class="nav-link active">Home</a>
             </li>
             <li>
-              <a href="cadastro.html" class="nav-link">Cadastrar</a>
+              <a href="cadastro.php" class="nav-link">Cadastrar</a>
             </li>
             <li>
               <a href="" class="nav-link">Contato</a>
             </li>
             <li class="mr-4">
-              <a href="suporte.html" class="nav-link">Suporte</a>
+              <a href="suporte.php" class="nav-link">Suporte</a>
             </li>
             <li id="nav-b-c">
-              <a style="font-size: 95%; width: 150px;" href="pagina-principal.html"
-                class="btn btn-outline-light">Entrar</a>
+              <a style="font-size: 95%; width: 150px;" href="index.php"
+                class="btn btn-outline-light">Sair</a>
             </li>
           </ul>
         </div>
+
+      </div>
   </header>
 
   <section class="d-flex justify-content-center align-items-center">

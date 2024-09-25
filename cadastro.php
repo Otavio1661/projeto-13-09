@@ -1,3 +1,16 @@
+<?php
+
+  require_once './php/config.php';
+
+  if(isset($_POST['submit']));
+  {
+    print_r($_POST['Usuario']);
+    print_r($_POST['Email']);
+    print_r($_POST['Senha']);
+  }
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -39,22 +52,23 @@
         <div style="padding-bottom: 10px;" class="collapse navbar-collapse" id="nav-principal">
           <ul class="navbar-nav ml-auto" style="font-size: 130%;">
             <li>
-              <a href="index.html" class="nav-link active">Home</a>
+              <a href="index.php" class="nav-link">Home</a>
             </li>
             <li>
-              <a href="cadastro.html" class="nav-link">Cadastrar</a>
+              <a href="cadastro.php" class="nav-link active">Cadastrar</a>
             </li>
             <li>
               <a href="" class="nav-link">Contato</a>
             </li>
             <li class="mr-4">
-              <a href="suporte.html" class="nav-link">Suporte</a>
+              <a href="suporte.php" class="nav-link">Suporte</a>
             </li>
             <li id="nav-b-c">
-              <a style="font-size: 95%; width: 150px;" href="pagina-principal.html"
+              <a style="font-size: 95%; width: 150px;" href="pagina-principal.php"
                 class="btn btn-outline-light">Entrar</a>
             </li>
           </ul>
+
         </div>
 
       </div>
@@ -63,41 +77,66 @@
 
   <section id="home" class=""> <!-- Início seção logn -->
     <div id="c-menu" class="pgs-1 row align-items-center div-responsive">
-      <form class="container col-10">
+      <form class="container col-10" action="./php/config.php" method="POST">
         <div class="form-group">
-          <label for="exampleInputEmail1" style="font-size: 120%;">Usuário</label>
-          <input style="height: 55px;" type="email" class="form-control" id="exampleInputEmail1"
-            aria-describedby="emailHelp" placeholder="E-mail">
-          <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+          <label for="Usuario" style="font-size: 110%;">Usuário</label>
+          <input style="height: 40px;" type="text" class="form-control" id="Usuario"
+            placeholder="Nome de usuário">
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1" style="font-size: 120%;">Senha</label>
-          <input style="height: 55px;" type="password" class="form-control" id="exampleInputPassword1"
+          <label for="Email" style="font-size: 100%;">E-mail</label>
+          <input style="height: 40px;" type="email" class="form-control" id="Email"
+            placeholder="E-mail">
+        </div>
+        <div class="form-group">
+          <label for="Senha" style="font-size: 100%;">Senha</label>
+          <input style="height: 40px;" type="password" class="form-control" id="Senha"
             placeholder="Senha">
+        </div>
+        <div class="form-group">
+          <label for="Senha2" style="font-size: 100%;">Confirmar senha</label>
+          <input style="height: 40px;" type="password" class="form-control" id="Senha2"
+            placeholder="Senha">
+        </div>
+        <div class="form-group">
+          <label for="telefone" style="font-size: 100%;">Telefone</label>
+          <input style="height: 40px;" type="tel" class="form-control phone_with_ddd" id="telefone"
+            maxlength="15" onkeyup="telefonecad(dd)" placeholder="(99) 9999-9999">
         </div>
         <div class="form-group form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Lembre de mim</label>
+          <label style="font-size: 15px;" class="form-check-label" for="exampleCheck1">Concordo com os termos de
+            privasidade</label>
         </div>
-        <div class="row" style="justify-content: center;">
-          <button style="width: 200px;" type="submit" class="btn" id="logar">
-            <a href="pagina-principal.html" class="link-logar"><strong>Logar</strong></a>
+
+        <div class="form-check" style="margin-top: 20px;"> <!-- ñ mexer na margin para ñ desformata -->
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1" checked>
+          <label style="font-size: 20px;" class="form-check-label" for="exampleRadios1">
+            Homem
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+          <label style="font-size: 20px;" class="form-check-label" for="exampleRadios2">
+            Mulher
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+          <label style="font-size: 20px;" class="form-check-label" for="exampleRadios2">
+            Não identificar
+          </label>
+        </div>
+
+
+        <div class="row" style="justify-content: center; margin: 0; margin-top: 20px;">
+
+          <button style="width: 200px;" type="submit" class="btn" id="cadastro">
+            <a href="index.php" class="link-cadastro"><strong>Cadastrar</strong></a>
           </button>
+
         </div>
       </form>
-
-      <div class="form-check" style="margin: 4% 5% 3% 10%;"> <!-- ñ mexer na margin para ñ desformata -->
-        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1" checked>
-        <label class="form-check-label" for="exampleRadios1">
-          Atacado
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
-        <label class="form-check-label" for="exampleRadios2">
-          Industria
-        </label>
-      </div>
 
     </div>
 
@@ -121,6 +160,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+  <script>
+  $('.phone_with_ddd').mask('(00) 0000-0000');</script>
+
 </body>
 
 </html>

@@ -36,19 +36,19 @@
           <div style="padding-bottom: 10px;" class="collapse navbar-collapse" id="nav-principal">
             <ul class="navbar-nav ml-auto" style="font-size: 130%;">
               <li>
-                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.php" class="nav-link">Home</a>
               </li>
               <li>
-                <a href="cadastro.html" class="nav-link">Cadastrar</a>
+                <a href="cadastro.php" class="nav-link">Cadastrar</a>
               </li>
               <li>
                 <a href="" class="nav-link">Contato</a>
               </li>
               <li class="mr-4">
-                <a href="suporte.html" class="nav-link active">Suporte</a>
+                <a href="suporte.php" class="nav-link active">Suporte</a>
               </li>
               <li id="nav-b-c">
-                <a style="font-size: 95%; width: 150px;" href="pagina-principal.html"
+                <a style="font-size: 95%; width: 150px;" href="pagina-principal.php"
                   class="btn btn-outline-light">Entrar</a>
               </li>
             </ul>

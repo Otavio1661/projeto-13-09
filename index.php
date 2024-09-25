@@ -1,3 +1,10 @@
+<?php
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -39,23 +46,22 @@
         <div style="padding-bottom: 10px;" class="collapse navbar-collapse" id="nav-principal">
           <ul class="navbar-nav ml-auto" style="font-size: 130%;">
             <li>
-              <a href="index.html" class="nav-link">Home</a>
+              <a href="index.php" class="nav-link active">Home</a>
             </li>
             <li>
-              <a href="cadastro.html" class="nav-link active">Cadastrar</a>
+              <a href="cadastro.php" class="nav-link">Cadastrar</a>
             </li>
             <li>
               <a href="" class="nav-link">Contato</a>
             </li>
             <li class="mr-4">
-              <a href="suporte.html" class="nav-link">Suporte</a>
+              <a href="suporte.php" class="nav-link">Suporte</a>
             </li>
             <li id="nav-b-c">
-              <a style="font-size: 95%; width: 150px;" href="pagina-principal.html"
+              <a style="font-size: 95%; width: 150px;" href="pagina-principal.php"
                 class="btn btn-outline-light">Entrar</a>
             </li>
           </ul>
-
         </div>
 
       </div>
@@ -66,61 +72,39 @@
     <div id="c-menu" class="pgs-1 row align-items-center div-responsive">
       <form class="container col-10">
         <div class="form-group">
-          <label for="exampleInputEmail1" style="font-size: 110%;">Usuário</label>
-          <input style="height: 40px;" type="email" class="form-control" id="exampleInputEmail1"
-            aria-describedby="emailHelp" placeholder="Nome de usuário">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputEmail1" style="font-size: 100%;">Usuário</label>
-          <input style="height: 40px;" type="email" class="form-control" id="exampleInputEmail1"
+          <label for="exampleInputEmail1" style="font-size: 120%;">Usuário</label>
+          <input style="height: 55px;" type="email" class="form-control" id="exampleInputEmail1"
             aria-describedby="emailHelp" placeholder="E-mail">
-          <small style="font-size: 12px;" id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu
-            email, com ninguém.</small>
+          <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1" style="font-size: 100%;">Senha</label>
-          <input style="height: 40px;" type="password" class="form-control" id="exampleInputPassword1"
-            placeholder="Senha">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1" style="font-size: 100%;">Confirmar senha</label>
-          <input style="height: 40px;" type="password" class="form-control" id="exampleInputPassword1"
+          <label for="exampleInputPassword1" style="font-size: 120%;">Senha</label>
+          <input style="height: 55px;" type="password" class="form-control" id="exampleInputPassword1"
             placeholder="Senha">
         </div>
         <div class="form-group form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label style="font-size: 15px;" class="form-check-label" for="exampleCheck1">Concordo com os termos de
-            privasidade</label>
+          <label class="form-check-label" for="exampleCheck1">Lembre de mim</label>
         </div>
-
-        <div class="form-check" style="margin-top: 20px;"> <!-- ñ mexer na margin para ñ desformata -->
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1" checked>
-          <label style="font-size: 20px;" class="form-check-label" for="exampleRadios1">
-            Homem
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
-          <label style="font-size: 20px;" class="form-check-label" for="exampleRadios2">
-            Mulher
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
-          <label style="font-size: 20px;" class="form-check-label" for="exampleRadios2">
-            Não identificar
-          </label>
-        </div>
-
-
-        <div class="row" style="justify-content: center; margin: 0; margin-top: 20px;">
-
-          <button style="width: 200px;" type="submit" class="btn" id="cadastro">
-            <a href="index.htmlF" class="link-cadastro"><strong>Cadastrar</strong></a>
+        <div class="row" style="justify-content: center;">
+          <button style="width: 200px;" type="submit" class="btn" id="logar">
+            <a href="pagina-principal.php" class="link-logar"><strong>Logar</strong></a>
           </button>
-
         </div>
       </form>
+
+      <div class="form-check" style="margin: 4% 5% 3% 10%;"> <!-- ñ mexer na margin para ñ desformata -->
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1" checked>
+        <label class="form-check-label" for="exampleRadios1">
+          Atacado
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+        <label class="form-check-label" for="exampleRadios2">
+          Industria
+        </label>
+      </div>
 
     </div>
 
